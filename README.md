@@ -1,0 +1,1 @@
+# Minio Spring Boot Stater

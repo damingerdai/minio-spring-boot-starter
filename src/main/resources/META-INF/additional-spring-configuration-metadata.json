@@ -1,0 +1,21 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "minio.endpoint",
+      "description": "Minio Client Endpoint Value"
+    },
+    {
+      "name": "minio.access",
+      "description": "Minio Client Access Value"
+    },
+    {
+      "name": "minio.secret",
+      "description": "Minio Client Secret Value"
+    },
+    {
+      "name": "minio.bucket",
+      "description": "Minio Client Bucket Value"
+    }
+  ]
+}
