@@ -20,3 +20,14 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task setVersion {
+    group = 'Versioning'
+    description = "Sets the version to the new number specified with -PnewVersion=\'x.x.x\'"
+    println version
+    if (project.hasProperty('newVersion')) {
+        println 'Set Project to new Version ' + newVersion
+        String s = buildFile.getText().replaceFirst("version '$version'", "version '" + newVersion + "'")
+        buildFile.setText(s)
+    }
+}
