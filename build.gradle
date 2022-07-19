@@ -11,7 +11,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-autoconfigure:2.7.1'
     implementation 'org.springframework.boot:spring-boot-configuration-processor:2.7.1'
-    implementation 'io.minio:minio:8.4.2'
+    implementation 'io.minio:minio:8.4.3'
     implementation 'org.slf4j:slf4j-api:1.7.36'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
