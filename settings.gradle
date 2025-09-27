@@ -1,1 +1,4 @@
-rootProject.name = 'minio-spring-boot-starter'
+rootProject.name = 'minio-spring-boot-starter-root'
+
+include 'minio-spring-boot-starter'
+include 'dev-app'
