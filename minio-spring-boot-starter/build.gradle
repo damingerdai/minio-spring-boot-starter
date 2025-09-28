@@ -1,0 +1,12 @@
+plugins {
+ id 'java-library'
+ id 'java'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-autoconfigure:3.5.6'
+    api 'io.minio:minio:8.6.0'
+    implementation 'org.slf4j:slf4j-api:2.0.17'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:3.5.6'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

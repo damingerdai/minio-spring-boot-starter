@@ -1,0 +1,26 @@
+plugins {
+    id 'org.springframework.boot' version '3.5.5'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'java'
+}
+
+description = 'Development and testing application for minio-spring-boot-starter'
+
+dependencies { 
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation project(':minio-spring-boot-starter')
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+bootJar {
+    mainClass = 'com.github.damingerdai.devapp.DevAppApplication'
+}
+
+jar {
+    // https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#packaging-executable.and-plain-archives
+    enabled = false
+}

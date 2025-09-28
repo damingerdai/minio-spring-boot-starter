@@ -35,3 +35,8 @@ bin/
 ### Others ###
 logs/
 .DS_Store
+
+# Dev app specific
+dev-app/build/
+dev-app/.gradle/
+dev-app/logs/

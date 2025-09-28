@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Bean;
  * @version 2022-07-06 17:20
  */
 @AutoConfiguration
-@ConditionalOnClass(MinioClient.class)
 @EnableConfigurationProperties(MinioProperties.class)
 public class MinioAutoConfiguration {
 
@@ -24,6 +23,7 @@ public class MinioAutoConfiguration {
     private MinioProperties minioProperties;
 
     @Bean(name = "minioClient")
+    @ConditionalOnClass(MinioClient.class)
     public MinioClient minioClient() throws Exception {
         this.logger.debug("---------- load minio client ----------");
         MinioClient minioClient = MinioClient.builder()
